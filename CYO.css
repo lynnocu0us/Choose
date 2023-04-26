@@ -1,0 +1,225 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+.nav-items::-webkit-scrollbar {
+    display: none;
+    }
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    }
+    
+
+    ::-webkit-scrollbar-track {
+    background: #000000;
+    outline: solid 3px black;
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background: #fff; 
+    }
+
+html{
+    background:  #3aafa9;
+    height: 100vh;
+}
+
+@media screen and (max-width:495px){
+
+    body{
+        position: absolute;
+        background-image: url('images/hearts.svg');
+        height: 100vh;
+        padding: 0;
+        font-size: max(1.3vmax,20px);
+        font-weight:900 ;
+    }
+    
+        .container{
+
+            background-image: url("images/chibi_reaps.svg");
+            background-size: 22%;
+            background-repeat: no-repeat;
+            background-position-x: right;
+            background-position-y: bottom;
+            width: min(80%, 800px);
+            background-color: rgba(255, 255, 255, 0.5);
+            outline: rgba(255, 255, 255, 0.5) 20px solid;
+            border-radius: .5%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            margin-top: 80px;
+
+
+    
+    
+    
+        }
+    
+    .content{
+        padding: 0 5% 5% 5%;
+    
+    
+    
+    }
+    .btn-grid{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 30px;
+        margin-top: 50px;
+    }
+    
+    button{
+        margin-top: 40px;
+        background-color: transparent;
+        border: 0px;
+        font-size: max(1.4vmax,26px);
+        text-align: left;
+    }
+    
+    input[type=text]{
+        font-size:max(1.35vmax,20px);
+    
+    
+    }
+    
+    label {
+        margin-top: 20px;
+    }
+    
+    
+    input[type=radio] {
+        opacity: 0;
+      }
+    
+      .input{
+        display: grid;
+        font-weight:500;
+      }
+    
+      .input:hover {
+        font-weight:900 ;
+        color: rgb(0, 0, 0);
+        text-decoration: underline;
+    
+    }
+    
+    a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    
+    p{
+        margin:0;
+    }
+    
+    
+    .heart-stamp{
+        width: 15%;
+    
+    
+    }    
+    
+}
+
+
+@media screen and (min-width: 496px) {
+body{
+    background-image: url('images/hearts.svg');
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: max(1.3vmax,20px);
+    font-weight:900 ;
+
+
+}
+
+    .container{
+        position: relative;
+        background-image: url("images/chibi_reaps.svg");
+        background-size: 22%;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: bottom;
+        width: min(80%, 800px);
+        background-color: rgba(255, 255, 255, 0.5);
+        outline: rgba(255, 255, 255, 0.5) 20px solid;
+        border-radius: .5%;
+
+
+
+    }
+
+.content{
+    padding: 0 5% 5% 5%;
+
+
+
+}
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+button{
+    margin-top: 40px;
+    background-color: transparent;
+    border: 0px;
+    font-size: max(1.4vmax,26px);
+    text-align: left;
+}
+
+input[type=text]{
+    font-size:max(1.35vmax,20px);
+
+
+}
+
+label {
+    margin-top: 20px;
+}
+
+
+input[type=radio] {
+    opacity: 0;
+  }
+
+  .input{
+    display: grid;
+    font-weight:500;
+  }
+
+  .input:hover {
+    font-weight:900 ;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+p{
+    margin:0;
+}
+
+
+.heart-stamp{
+    width: 15%;
+
+
+}
+}
